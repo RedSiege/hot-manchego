@@ -3,7 +3,7 @@ Private Sub Workbook_Open()
     Dim TaskID As Double
     On Error Resume Next
     Program = "calc.exe"
-    TaskID = Shell(Program, 0)
+    TaskID = Shell(Program, 1)
     If Err <> 0 Then    
         MsgBox "Can't start " & Program
     End If
