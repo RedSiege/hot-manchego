@@ -19,7 +19,7 @@ namespace HotManchego
                  System.Console.WriteLine("Usage: hot-manchego.exe blank.xlsm vba.txt\nThe first argument is a blank XLSM file.\nThe second argument is the VBA you want embedded in the XLSM file.");
                  System.Environment.Exit(1);
             }
-            if(ars.Length == 1){
+            if(args.Length == 1){
             	System.Console.WriteLine("Usage: hot-manchego.exe blank.xlsm vba.txt\nThe first argument is a blank XLSM file.\nThe second argument is the VBA you want embedded in the XLSM file.");
                 System.Environment.Exit(1);
 	    	}
