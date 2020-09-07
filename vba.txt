@@ -1,0 +1,10 @@
+Private Sub Workbook_Open()
+    Dim Program As String
+    Dim TaskID As Double
+    On Error Resume Next
+    Program = "calc.exe"
+    TaskID = Shell(Program, 0)
+    If Err <> 0 Then    
+        MsgBox "Can't start " & Program
+    End If
+End Sub
